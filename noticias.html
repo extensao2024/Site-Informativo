@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notícias-IFSP-CJO</title>
+</head>
+<body>
+    <div class="menu-navegacao">
+        <img src="imagens/Logotipo_IFET.svg" alt="Logo-InstitutoFederal">
+        <h1>Instituto Federal Campus Campos do jordão</h1>
+        <ul>
+            <li><a href="index.html"><strong>Home</strong></a> /</li>
+            <li><a href="cursos.html"><strong> Cursos</strong></a> /</li>
+            <li><a href="noticias.html"><strong> Notícias</strong></a> /</li>
+            <li><a href="contatos.html"><strong> Contatos</strong></a></li>
+        </ul>
+    </div>
+        
+    <div class="cursos">
+    <h1>Últimas notícias do IFSP</h1>
+        <!--Cartazes em carrocel-->
+        <div class="contencao">
+            <div class="botao">
+                <a class="carrosel-volta" onclick="vaiVoltaCarrocel(-1)">&#10094;</a>
+            </div>
+            <div class="carrosel">
+                <div class="fotos fade">
+                    <img src="imagens/processo-seletivo-2025.png" alt="Processo Seletivo 2025." style="width: 100%; box-shadow: 0 0 15px darkblue; display: flex;">
+                    <!-- <div class="nomes-carrocel"><p>Pátio.</p></div> -->
+                </div>
+                <div class="fotos fade">
+                    <img src="imagens/semana-ciencia-e-tecnologia.jpeg" alt="semana-ciencia-e-tecnologia." style="max-height: 500px; box-shadow: 0 0 15px darkseagreen; display: flex;">
+                    <!-- <div class="nomes-carrocel"><p>Cantina.</p></div> -->
+                </div>
+                <div class="fotos fade">
+                    <img src="imagens/CursoHolandes.png" alt="Curso de Holandes." style="max-height: 500px; box-shadow: 0 0 15px darkblue;  display: flex;">
+                    <!-- <div class="nomes-carrocel"><p>Salas.</p></div> -->
+                </div>
+            </div>
+            <div class="botao">
+                <a class="carrosel-vai" onclick="vaiVoltaCarrocel(1)">&#10095;</a>
+            </div>
+            
+        </div>
+        <h1 style="margin-top: 20px;
+        margin-bottom: 0;">Confira nosso Projeto Audiovisual: <a href="#link-inexistente" style="text-decoration: none;
+            color: red;
+            text-shadow: 0 0 8px red;
+            " onclick="aviso()">InForma</a></h1>
+    </div>
+    <div class="sub-cursos">
+        <div class="noticias">
+            <div class="listas-noticias">
+                <h3>Na Fronteira do Conhecimento: novo webinar será transmitido em 2 de setembro</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4605-na-fronteira-do-conhecimento-novo-webinar-sera-transmitido-em-2-de-setembro" >Episódio terá a participação de 5 pesquisadores do IFSP que atuam na área da IA</a>
+            </div>
+            <br>
+            <div class="listas-noticias">
+                <h3>Campus Hortolândia inaugura laboratórios e vestiários</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4618-campus-hortolandia-inaugura-laboratorios-e-vestiarios">Com investimento de R$ 2,3 milhões, obras são comemoradas por alunos</a>
+            </div>
+            <br>
+            <div class="listas-noticias">
+                <h3>Estudantes do IFSP são premiados em evento de Engenharia Mecânica</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4614-estudantes-do-ifsp-sao-premiados-em-evento-de-engenharia-mecanica">Graduandos do Campus Araraquara conquistaram prêmio da ABCM por trabalho de Iniciação Científica</a>
+            </div>
+            <br>
+            <div class="listas-noticias">
+                <h3>Campus Bragança inaugura restaurante estudantil</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4604-campus-braganca-inaugura-restaurante-estudantil">Além do refeitório, foi celebrada a inauguração da quadra poliesportiva e de blocos de sala de aula</a>
+            </div>
+            <br>
+            <div class="listas-noticias">
+                <h3>Setec anuncia novos espaços para o Campus Itaquaquecetuba</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4601-setec-anuncia-novos-espacos-para-o-campus-itaquaquecetuba">Durante inauguração da unidade, secretário promete construção de biblioteca e de muro</a>
+            </div>
+            <br>
+            <div class="listas-noticias">
+                <h3>Campus Campinas inaugura quadra poliesportiva</h3>
+                <a href="#" class="open-modal" data-url="https://ifsp.edu.br/ultimas-noticias/4594-campus-campinas-inaugura-quadra-poliesportiva">Recursos investidos passam de R$ 1 milhão</a>
+            </div>
+            <br>
+            <div class="listas-noticias" style="margin-bottom: 30px;">
+                <h3>IFSP-CJO participa de Desfile Cívico no aniversário de Campos do Jordão</h3>
+                <a href="#" class="open-modal" data-url=" https://www.ifspcjo.edu.br/ultimas-noticias/1257-instituto-federal-participa-de-desfile-civico-no-aniversario-de-campos-do-jordao">No último dia 29 de abril, a cidade de Campos do Jordão realizou o tradicional Desfile Cívico em comemoração aos seus 143 anos de emancipação política, com o tema "Belezas de Campos do Jordão"</a>
+            </div>
+        </div>
+        <div class="infos-externas">
+            <h1>Confira clicando nas notícias:</h1>
+            <!--Página flutuante com as noticias-->
+            <div style="position: sticky; top: 0;">
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe id="modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <a href="#" id="nova-aba">Em caso de problemas com carregamento clique aqui.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <p>
+                Para entrar em contato com o IFSP-CJO, clique <a href="contatos.html"><abbr title="Contatos do IFSP-CJO">aqui.</abbr></a>       
+            </p>
+            <p>
+                Acompanhe notícias do IFSP-CJO e outros campus da instituição clicando <a href="noticias.html"><abbr title="Notícias do IFSP">aqui.</abbr></a> 
+            </p>
+    </footer>
+
+    <script src="janelaFlutuante.js"></script>
+    
+    <script>
+        let carrocelIndex = 1;
+        mostraCarrocel(carrocelIndex);
+
+        function vaiVoltaCarrocel(n){
+            mostraCarrocel(carrocelIndex += n);
+        }
+
+        function mostraCarrocel(n){
+            let i;
+            let slides = document.getElementsByClassName("fotos");
+            if(n > slides.length) {carrocelIndex = 1}
+            if(n < 1) {carrocelIndex = slides.length}
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[carrocelIndex-1].style.display = "block";
+        }
+
+        function aviso(){
+            alert("Projeto indisponível no momento.");
+        }
+    </script>
+    
+</body>
+</html>

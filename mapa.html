@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contatos-IFSP-CJO</title>
+    <style>
+        /* Estilo para o modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  margin: 1% auto 10%;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-navegacao">
+        <img src="imagens/Logotipo_IFET.svg" alt="Logo-InstitutoFederal">
+        <h1>Instituto Federal Campus Campos do jordão</h1>
+        <ul>
+            <li><a href="index.html"><strong>Home</strong></a> /</li>
+            <li><a href="cursos.html"><strong> Cursos</strong></a> /</li>
+            <li><a href="noticias.html"><strong> Notícias</strong></a> /</li>
+            <li><a href="contatos.html"><strong> Contatos</strong></a></li>
+        </ul>
+    </div>
+    <div class="cursos" style="margin-bottom: 0; padding: 5px;">
+        <h1>Conheça detalhadamente as instalações</h1>
+        <!--Mapa interativo com javascript-->
+        <div class="carrocel">
+            <img src="imagens/MapaIcon.png" alt="IFSP-CJO-Google-Earth-2024" style="margin-bottom: 10px; box-shadow: 0 0 15px black;">
+        </div>
+    </div>
+    <div class="legendaMapa">
+        <button data-text="Cantina" data-text2="Espaço que fornece geladeira e microondas para os alunos que trazem a própria comida, além disso os alunos podem comprar comida aqui ou usar as mesas para estudar e se reunir." class="open-modal-btn" data-image="imagens/cantina.jpeg"><img src="imagens/comida.png" style="max-height: 30px;">   Cantina   <img src="imagens/comida.png" style="max-height: 26px;"></button>
+        <button data-text="Patio" data-text2="A entrada principal do instituto, indapendente da porta que você use para entrar, na maioria das vezes você vai passar por este pátio. Aqui é onde se encontra a secretária, os binheiros, a biblioteca, mesas de pingpong, messas e bancos para os alunos ficarem conversando ou estudando. Também é passagem para a maioria das sala e laboratórios, e o local mais usado quando acontecem palestras no campus." class="open-modal-btn" data-image="imagens/patio1.jpeg"><img src="imagens/livro.png" style="max-height: 26px;">   Pátio E Biblioteca   <img src="imagens/sino.png" style="max-height: 26px;"></button>
+        <button data-text="Salas" data-text2="O insitituto é composto por mais de 15 salas, dentre elas existem sala convencionais com mesas, cadeiras e lousas, mas também estão inclusos laboratórios, como os de computação, onde existem computadores para que todos os alunos possam usar, o de edificações, que fornece um espaço para manuseio de ferramentas, materiais e tecnicas abordados em determinado curso, ou outros laboratorios, como o de ospedagem ou turismo, onde cada um apresenta seus determinadas peculiridades para cada área." class="open-modal-btn" data-image="imagens/corredor-saida.jpeg"><img src="imagens/pocao.png" style="max-height: 26px;">   Salas e Laboratórios   <img src="imagens/livro.png" style="max-height: 26px;"></button>
+    </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              
+              <!-- Conteúdo do Modal: Será preenchido dinamicamente -->
+                <div id="modal-body">
+                <!-- Conteúdo será injetado aqui -->
+                </div>
+             </div>
+        </div>
+    
+    <footer>
+        <p>
+            Para entrar em contato com o IFSP-CJO, clique <a href="contatos.html"><abbr title="Contatos do IFSP-CJO">aqui.</abbr></a>       
+        </p>
+        <p>
+            Acompanhe notícias do IFSP-CJO e outros campus da instituição clicando <a href="noticias.html"><abbr title="Notícias do IFSP">aqui.</abbr></a> 
+        </p>
+    </footer>
+    <script src="pontosDeEnteresse.js"></script>
+</body>
+</html>
